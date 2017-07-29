@@ -1,0 +1,7 @@
+#!/bin/sh
+
+db=gh_mimosa
+[ $1 ] && db=$1
+mysql --defaults-extra-file=mysqlclient.conf $db
+
+
